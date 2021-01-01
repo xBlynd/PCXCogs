@@ -154,7 +154,7 @@ class ReminderCommands(MixinMeta, ABC, metaclass=CompositeMetaClass):
         await self._delete_reminder(ctx, index)
 
     @commands.command()
-    async def remindme(
+    async def remind(
         self, ctx: commands.Context, *, time_and_optional_text: str = ""
     ):
         """Create a reminder with optional reminder text.
@@ -308,7 +308,7 @@ class ReminderCommands(MixinMeta, ABC, metaclass=CompositeMetaClass):
             )
             self.me_too_reminders[query.id] = reminder
             await query.add_reaction(self.reminder_emoji)
-            await asyncio.sleep(30)
+            await asyncio.sleep(43200)
             await delete(query)
             del self.me_too_reminders[query.id]
 
