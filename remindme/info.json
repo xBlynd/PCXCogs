@@ -1,7 +1,8 @@
 {
     "name": "RemindMe",
     "author": [
-        "PhasecoreX (PhasecoreX#0635)"
+        "PhasecoreX (PhasecoreX#0635)",
+        "Blynd"
     ],
     "short": "Set reminders for yourself.",
     "description": "Allows for users to set reminders for themselves.",
